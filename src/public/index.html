@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Magic Mirror - Habitica Stats</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <div class="stats-container">
+    <div class="character-info">
+      <h1 id="characterName">Loading...</h1>
+      <p id="characterLevel"></p>
+    </div>
+    
+    <div class="stat-bars">
+      <div class="stat-bar">
+        <div class="stat-icon health"></div>
+        <div class="bar-container">
+          <div id="healthBar" class="bar health-bar"></div>
+        </div>
+        <div id="healthText" class="stat-text"></div>
+      </div>
+      
+      <div class="stat-bar">
+        <div class="stat-icon experience"></div>
+        <div class="bar-container">
+          <div id="experienceBar" class="bar experience-bar"></div>
+        </div>
+        <div id="experienceText" class="stat-text"></div>
+      </div>
+      
+      <div class="stat-bar">
+        <div class="stat-icon mana"></div>
+        <div class="bar-container">
+          <div id="manaBar" class="bar mana-bar"></div>
+        </div>
+        <div id="manaText" class="stat-text"></div>
+      </div>
+    </div>
+
+    <div class="currency-container">
+      <div class="currency-item">
+        <i class="fas fa-coins currency-icon"></i>
+        <span id="goldText" class="currency-text">0</span>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
